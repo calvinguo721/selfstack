@@ -1,0 +1,83 @@
+{
+  "stack_name": "My Stack",
+  "state_dir": "~/.selfstack/state",
+  "proxy": "",
+  "github_token_env": "GITHUB_TOKEN",
+  "timeout": 25,
+  "stale_repo_days": 120,
+  "radar_window_days": 180,
+  "min_stars": 200,
+  "max_age_days": 365,
+  "top_n": 10,
+  "use_hackernews": true,
+  "risky_licenses": ["AGPL-3.0", "GPL-3.0", "SSPL-1.0"],
+
+  "roots": [
+    "~/projects",
+    "~/repos"
+  ],
+
+  "skill_dirs": [
+    "~/.workbuddy/skills",
+    "~/.claude/skills",
+    "~/.codex/skills"
+  ],
+
+  "credential_dirs": [
+    "~/.agent_mail",
+    "~/.workbuddy/credentials"
+  ],
+
+  "mcp_configs": [
+    "~/.workbuddy/mcp.json"
+  ],
+
+  "env_files": [
+    "~/.workbuddy/ENVIRONMENT.md",
+    "~/.workbuddy/MEMORY.md"
+  ],
+
+  "declared_tools": [
+    "python",
+    "node",
+    "git",
+    "uv",
+    "ffmpeg",
+    "edge-tts"
+  ],
+
+  "pinned_tools": [],
+
+  "max_capability_clusters": 12,
+
+  "queries": [
+    {
+      "q": "agent observability tracing",
+      "hn": true
+    },
+    {
+      "q": "mcp server filesystem",
+      "hn": false
+    },
+    {
+      "q": "browser automation llm",
+      "hn": true
+    },
+    {
+      "q": "dependency upgrade advisor",
+      "hn": false
+    }
+  ],
+
+  "watched_repos": [
+    { "repo": "openai/codex" }
+  ],
+
+  "watched_packages": [
+    { "eco": "pypi", "name": "cli-tool-audit" }
+  ],
+
+  "awesome_repos": [],
+
+  "channel_probes": {}
+}
